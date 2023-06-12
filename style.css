@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 600px;
+    overflow-x: hidden;
+    
+    
+}
+button{
+    box-shadow: 0 0 10px black;
+}
+header{
+    background-image: url("https://images.unsplash.com/photo-1588168333986-5078d3ae3976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    position: relative;
+}
+header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, black, transparent);
+
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 100px;
+    
+}
+
+h1:nth-of-type(1){
+    color: orange;
+   
+}
+h1:nth-of-type(2){
+    color: white;
+   
+}
+h1:nth-of-type(3){
+    color: orange;
+   
+}
+.italic{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px;
+    text-shadow: 0 0 10px black;
+    
+   
+   
+}
+.italic::before{
+    content: "This";
+    position: absolute;
+    color: white;
+    left: 80px;
+    padding-left:  10px;
+    top: -10px;
+   text-align: center;
+    font-size: 30px;
+    transform: rotate(-20deg);
+    z-index: 1;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px black;
+    font-family: 'Cherry Bomb One', cursive;
+   
+
+}
+
+h3{
+    position: absolute;
+    color: white;
+    left: 95px;
+    top: 0;
+   text-align: center;
+    font-size: 30px;
+    transform: rotate(-25deg);
+    z-index: 1;
+    font-style: italic;
+    
+    
+}
+h3::first-letter{
+    text-transform: uppercase;
+}
+.wrap{
+    margin-top: 10px;
+    
+    height: 100px;
+    
+}
+
+.custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+section{
+    width: 100%;
+}
+
+.shape-fill{
+    fill: black;
+  
+    
+}
+svg{
+    height: 150px;
+    width: 100%;
+}
+#two{
+    position: relative;
+    background-color: rgb(37, 36, 36);
+    padding: 10px;
+}
+.free{
+    color: white;
+    z-index: 2;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sec-1{
+    color: white;
+    line-height: 2;
+    text-align: center;
+    font-size: 15px;
+    z-index: 2;
+    
+   
+}
+.container{
+    
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#book{
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    /* width: 125px; */
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+span{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: rgb(37, 36, 36);
+    width: 50px;
+    height: 30px;
+    display: block;
+    transform: rotate(180deg);
+    margin: auto;
+    
+}
+.menuSection{
+    color: black;
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap: 15px;
+}
+#menu{
+    color: white;
+    padding: 15px;
+    /* width: 160px; */
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.menuHead{
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+img{
+   width: 175px;
+   z-index: 2;
+   transform: translateY(-25px);
+   filter: drop-shadow(0 0 10px black);
+   border-radius: 10px;
+   
+}
+
+.menuGrid{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 2px; */
+    margin-top: 40px;
+    
+    
+}
+.item{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   width: 200px;
+   padding: 30px 20px;
+   border-right: 2px solid black;
+  
+}
+.item:nth-last-of-type(1){
+    border-right: none;
+}
+.menuP{
+    /* text-align: center; */
+    font-size: 14px;
+}
+.order{
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    /* width: 100px; */
+    font-size: 16px;
+    background-color: white;
+}
+
+#visit{
+    background-image: url("https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=985&q=80");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.visit{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+.container:nth-last-of-type(1){
+    background-color: rgba(37, 36, 36, 0.853);
+    padding: 20px;
+    gap: 20px;
+    margin: 20px 0;
+}
+.visitP{
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+#hours{
+    display: flex;
+}
+.map{
+    width: 50%;
+    transform: none;
+}
+.map img{
+    width: 100%;
+    height: 100%;
+}
+.hours{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.hoursHead{
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+
+.hours p{
+    text-align: center;
+    font-size: 18px;
+}
+address{
+    text-align: center;
+    color: blue;
+}
+footer{
+    /* margin-top: 10px; */
+    padding: 10px;
+    height: 250px;
+    background-color: rgb(37, 36, 36);
+}
+i{
+    font-size: 30px;
+    color: white;
+}
+.links{
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+    /* background-color: red; */
+    
+}
+.contain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+.contain p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    /* background-color: red; */
+}
+.contain address{
+    color: orange;
+    font-size: 14px;
+}
+.copy{
+    text-align: center;
+    color: white;
+    font-size: 12px;
+   
+}
